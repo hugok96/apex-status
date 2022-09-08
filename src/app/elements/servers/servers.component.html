@@ -1,0 +1,17 @@
+<main>
+    <div *ngIf="loading"><small>loading...</small></div>
+    <ng-container *ngIf="!loading">
+        <div class="server-type" *ngFor="let server of normalizedServers">
+            <table>
+                <tr>
+                    <th colspan="3">{{server.name}}</th>
+                </tr>
+                <tr *ngFor="let stat of server.children">
+                    <td>{{stat.name}}</td>
+                    <td>{{stat.status.Status}}</td>
+                    <td>{{stat.status.ResponseTime}}ms</td>
+                </tr>
+            </table>
+        </div>
+    </ng-container>
+</main>

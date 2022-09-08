@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap')
+
+body
+    margin: 0
+    background: #101010
+    padding: 2rem
+    overflow-x: hidden
+    color: white
+    font-family: 'Oxygen', sans-serif
+    scroll-behavior: smooth
+
+::-webkit-scrollbar
+    height: 0.5rem
+    background: black
+
+::-webkit-scrollbar-thumb
+    background-color: #3d3d3d
+    outline: 1px solid #494949
+    border-radius: 1rem
+
+
+.text-muted
+    color: #8f8f8f
+
+a[href]
+    color: #8E7C6E
+    font-weight: bold
+    text-decoration: none
+
+@keyframes hue-shift
+    from
+        filter: hue-rotate(0deg)
+
+    to
+        filter: hue-rotate(360deg)

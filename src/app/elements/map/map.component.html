@@ -1,0 +1,20 @@
+<main>
+    <div class="rotation-current">
+        <img [src]="rotation?.current?.asset">
+        <div class="rotation-details">
+            <h2>
+                <small>{{mode}}</small>
+                {{ rotation?.current?.map }}
+            </h2>
+            <span>time left:</span>
+            <h3><app-countdown [end]="date(rotation?.current?.end ?? 0)"></app-countdown></h3>
+        </div>
+        <div class="rotation-next-up">
+            <img [src]="rotation?.next?.asset">
+            <div>
+                <div>next up:</div>
+                <div>{{rotation?.next?.map}}</div>
+            </div>
+        </div>
+    </div>
+</main>

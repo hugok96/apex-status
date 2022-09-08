@@ -1,0 +1,24 @@
+<main>
+    <div class="group">
+        <h1>
+            daily
+            <small>time left: <app-countdown [end]="dailyEnd"></app-countdown></small>
+        </h1>
+        <app-crafting-items [rotation]="rotation" *ngFor="let rotation of dailyRotation" ></app-crafting-items>
+    </div>
+    <div class="group">
+        <h1>
+            weekly
+            <small>time left: <app-countdown [end]="weeklyEnd"></app-countdown></small>
+        </h1>
+        <app-crafting-items [rotation]="rotation" *ngFor="let rotation of weeklyRotation" ></app-crafting-items>
+    </div>
+    <div class="group">
+        <h1>weapon</h1>
+        <app-crafting-items [rotation]="rotation" *ngFor="let rotation of weapons" ></app-crafting-items>
+    </div>
+    <div class="group permanent">
+        <h1>permanent</h1>
+        <app-crafting-items [rotation]="rotation" *ngFor="let rotation of permanent" ></app-crafting-items>
+    </div>
+</main>

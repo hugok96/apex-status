@@ -1,0 +1,7 @@
+<div *ngFor="let content of rotation.bundleContent" [title]="content.item">
+    <img class="asset" [src]="content.itemType.asset" [style.background-color]="content.itemType.rarityHex"/>
+    <span class="description">
+        <img src="assets/crafting.svg" class="crafting"/>
+        <span>{{content.cost}}</span>
+    </span>
+</div>

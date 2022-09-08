@@ -1,0 +1,82 @@
+main
+    background: #1e1e1e
+    border: 1px solid #2a2a2a
+    border-radius: 0.5rem
+    width: 100%
+    overflow: hidden
+
+    h1
+        margin: 0
+        padding: 0.5rem
+        border-bottom: 1px solid #2a2a2a
+        font-size: 1.5rem
+        font-weight: normal
+        text-align: center
+
+    div.rotation-current
+        height: 20rem
+        width: 100%
+        position: relative
+        overflow: hidden
+
+        >img
+            height: 100%
+            width: 50%
+            object-fit: cover
+            filter: brightness(2.25)
+
+        .rotation-next-up
+            position: absolute
+            bottom: 0
+            left: 50%
+            padding: 1rem
+            display: flex
+            gap: .5rem
+            filter: drop-shadow(-2px 2px 3px rgba(0,0,0,.5))
+
+            img
+                width: 6rem
+                height: 4rem
+                object-fit: cover
+                border-radius: .5rem
+                filter: brightness(2.75)
+
+            >div
+                display: flex
+                flex-direction: column
+                justify-content: center
+                color: #c3c3c3
+
+        .rotation-details
+            position: absolute
+            top: 0
+            left: 50%
+            height: 100%
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            h2
+                margin: 0 0 2rem
+                text-align: center
+                font-size: 1.75rem
+
+                small
+                    display: block
+                    font-size: 0.95rem
+                    font-weight: 400
+                    opacity: .6
+                    text-align: center
+                    text-transform: lowercase
+                    margin-bottom: -0.125rem
+
+            h3
+                margin: 0 0 3rem
+                font-weight: normal
+
+            span
+                opacity: .6
+                font-size: 0.95rem
+                margin-bottom: -0.125rem
